@@ -1,0 +1,121 @@
+﻿textarea {
+    height:300px;
+    width:100%;
+    resize:none;
+    border:1px solid #ccc;
+
+}
+
+.select {
+    border:1px solid #ccc;
+    padding:10px;
+    width:100%
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --topo: #333;
+    --menu: #666;
+}
+
+.userName {
+    background-color: #044A50;
+    background-image: linear-gradient(to right, #044A50, #0FB9CB)
+}
+
+
+.contentAviso,
+.contentAvisoGenerico,
+.contentModalEditUsuario {
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.7 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left:0;
+    position: fixed;
+    z-index: 2000;
+    visibility: hidden;
+    overflow: hidden
+}
+
+#avisoDeCamposVazios,
+#avisoDeCamposVaziosGenerico,
+#ModalEditUsuario {
+    position: absolute;
+    z-index: 1000;
+    overflow: hidden;
+    
+    display:flex
+}
+
+
+
+
+
+
+.avisoRedEmail {
+    color: red;
+    display: none
+}
+
+/* LOADER **         
+<div class="loaderContent">
+    <div id="loader"></div>
+</div> 
+*/
+.loaderContent {
+    position:absolute; 
+    width:100%; 
+    height:100%; 
+    background-color: rgb(255 , 255 , 255 , 0.7); 
+    top:0; 
+    left:0; 
+    align-items:center; 
+    justify-content:center; 
+    display:flex
+}
+
+#loader {
+    border: 3px solid #ddd;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    align-items:center;
+    justify-content:center;
+    border-top:3px solid #4d804b;
+    border-bottom:3px solid #132202;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/** / LOARDER */
+

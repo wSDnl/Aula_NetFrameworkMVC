@@ -1,0 +1,30 @@
+CREATE TABLE usuario(
+id int not null auto_increment,
+nome varchar(100),
+email varchar(100),
+senha varchar(100),
+primary key(id)
+);
+
+CREATE TABLE documentos(
+id int not null auto_increment,
+RazaoSocial varchar(100),
+CNPJ varchar(50),
+DDD varchar(5),
+Telefone varchar(20),
+Endereco varchar(100),
+Numero int,
+Bairro varchar(100),
+Estado varchar(20),
+Cidade varchar(100),
+CEP varchar(20),
+EMail varchar(100),
+InscricaoEstadual varchar(100),
+DataInsert date,
+primary key(id)
+);
+INSERT INTO documentos ( RazaoSocial ,  CNPJ ,  DDD ,  Telefone ,  Endereco ,  Numero ,  Bairro ,  Estado ,  Cidade ,  CEP ,  EMail ,  InscricaoEstadual ,  DataInsert ) VALUES ('', '', '', '', '', '', '', '', '', '', '', '', '');
+
+
+
+

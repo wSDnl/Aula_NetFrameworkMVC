@@ -1,0 +1,83 @@
+﻿
+
+<!-- Page header -->
+<div class="page-header page-header-default">
+    <div class="page-header-content">
+        <div class="page-title">
+            <h4>Login</h4>
+        </div>
+
+    </div>
+
+    <div class="breadcrumb-line">
+        <ul class="breadcrumb">
+            <li><a href="/Home/Index"><i class="icon-home2 position-left"></i> Home</a></li>
+            <li class="active">Esqueci a Senha</li>
+        </ul>
+    </div>
+</div>
+<!-- /page header -->
+<!-- Basic layout-->
+
+<div class="panel panel-flat">
+
+    <div class="panel-body">
+
+        <div class="form-group">
+            <label>E-mail: <label class="avisoRedEmail">Formato de e-mail inválido</label> </label>
+            <input id="txtEmailRecupera" type="text" class="form-control" style="text-transform:lowercase">
+        </div>
+
+        <div class="text-right">
+            <input type="button" id="btnRecuperaSenha" value="RECUPERAR SENHA" class="btn btn-primary" >
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+
+    function salvaCadastro() {
+        alert("")
+    }
+
+    function VerificaCamposPreenchidos() {
+
+        var email = $('#email').val();
+        var senha = $('#senha').val();
+        var emailRegex = /[a-z0-9._%+-]+[a-z0-9.-]+\.[a-z]{2,}$/;
+        var resEmailRegex = emailRegex.exec(email);
+
+        /* REGEX */
+        if (resEmailRegex) {
+            avisoEmail = 0;
+        } else {
+            avisoEmail = 1;
+        }
+
+        if (avisoEmail == 1) {
+            $('.avisoRedEmail').show()
+        } else {
+            $('.avisoRedEmail').hide()
+        }
+
+        /* VERIFICA CAMPOS NÃO PREENCHIDOS */
+        if (email == '' || senha == '' || avisoEmail == 1) {
+            $('.contentAviso').css({ visibility: "visible" });
+        } else {
+            salvaCadastro()
+        }
+
+    }
+
+    $('.close').click(function () {
+        $('.contentAviso').css({ visibility: "hidden" });
+    })
+
+</script>
+
+
+
+
+<!-- /basic layout -->

@@ -1,0 +1,106 @@
+﻿<!-- Page header -->
+<div class="page-header page-header-default">
+    <div class="page-header-content">
+        <div class="page-title">
+            <h4>Cadastrar Novo Documento</h4>
+        </div>
+
+    </div>
+
+    <div class="breadcrumb-line">
+        <ul class="breadcrumb">
+            <li><a href="/Home/Index"><i class="icon-home2 position-left"></i>Home</a></li>
+            <li class="active">Cadastrar Novo Documento</li>
+        </ul>
+    </div>
+</div>
+<!-- /page header -->
+<!-- Basic layout-->
+
+<div class="panel panel-flat">
+
+    <div class="panel-body">
+
+        <div class="form-group">
+            <label>Razão Social:</label>
+            <input id="txtRazaoSocialNovoDocumento" type="text" class="form-control NovoDocumento" style="text-transform:capitalize" value="teste">
+        </div>
+
+        <div class="form-group">
+            <label>CNPJ:</label>
+            <input id="txtCNPJNovoDocumento" type="text" class="form-control NovoDocumento" value="teste">
+        </div>
+
+        <div class="form-group">
+            <label>DDD:</label>
+            <input id="txtDDDNovoDocumento" type="text" class="form-control NovoDocumento" value="teste">
+        </div>
+
+        <div class="form-group">
+            <label>Telefone:</label>
+            <input id="txtTelefoneNovoDocumento" type="text" class="form-control NovoDocumento" value="teste">
+        </div>
+
+        <div class="form-group">
+            <label>Endereço:</label>
+            <input id="txtEnderecoNovoDocumento" type="text" class="form-control NovoDocumento" value="teste">
+        </div>
+
+        <div class="form-group">
+            <label>Número:</label>
+            <input id="txtNumeroNovoDocumento" type="text" class="form-control NovoDocumento" value="123">
+        </div>
+
+        <div class="form-group">
+            <label>Bairro:</label>
+            <input id="txtBairroNovoDocumento" type="text" class="form-control NovoDocumento" value="teste">
+        </div>
+
+        <div class="form-group">
+            <label>Estado:</label><br>
+            <label>
+                <select id="selEstadoNovoDocumento" class="select" onchange="selecionaCidades(this.value)"></select>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>Cidade:</label><br>
+            <label>
+                <select id="selCidadesNovoDocumento" class="select"></select>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>CEP:</label>
+            <input id="txtCEPNovoDocumento" type="text" class="form-control NovoDocumento" value="teste">
+        </div>
+        
+        <div class="form-group">
+            <label>E-Mail:</label>
+            <input id="txtEMailNovoDocumento" type="text" class="form-control NovoDocumento" value="teste">
+        </div>
+
+        <div class="form-group">
+            <label>Inscrição Estadual:</label>
+            <input id="txtInscricaoEstadualNovoDocumento" type="text" class="form-control NovoDocumento" value="teste">
+        </div>
+
+        @*<div class="form-group">
+            <label>Categoria:</label>
+            <label id="lblContOptionCategoriaNovoDoc">
+
+                <select><option value=''></option></select>
+             </label>
+            <label class="fa fa-plus"></label>
+        </div>*@
+
+    </div>
+
+
+        <div class="text-right">
+            <input type="button" id="btnNovoDocumento" value="SALVAR" class="btn btn-primary" />
+        </div>
+
+    </div>
+
+<!-- /basic layout -->
