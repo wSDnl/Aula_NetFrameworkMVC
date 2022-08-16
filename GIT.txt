@@ -4,11 +4,11 @@ git add .
 git status
 git commit -m "Dnl5 #7 TESTE COMMIT DAT"
 git branch -M master
-git remote add origin https://github.com/wSDnl/Dnl5_ASP_NET_MVC.git
+git remote add origin https://github.com/wSDnl/Aula_NetFrameworkMVC.git
 git push -u origin master
 
 demais commits
-git remote add origin https://github.com/wSDnl/Dnl5_ASP_NET_MVC
+git remote add origin https://github.com/wSDnl/Aula_NetFrameworkMVC.git
 git branch -M master
 git push -u origin master
 
