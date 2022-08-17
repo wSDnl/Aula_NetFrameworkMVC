@@ -24,6 +24,7 @@ function ready() {
         if (path != '/Home/Login') {
             //window.top.location.href = "/Home/Login"
             //window.top.location.href = "../../index.html";
+            //teste git
         }
     } else {
         atribuiNomeDeUsuario();
